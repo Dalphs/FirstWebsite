@@ -1,6 +1,11 @@
 html, body{
     margin: 0;
     padding: 0;
+    background: black;
+}
+
+ul{
+    list-style-type: square;
 }
 
 .header {
@@ -12,16 +17,15 @@ html, body{
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-
 }
 
 .navbar{
     float: left;
     background-color: #363636;
-    position: fixed;
-    padding: 10px 0px 10px 0px;
+    position: sticky;
     display: block;
     width: 100%;
+    top: 0;
 }
 
 .navbar a{
@@ -29,6 +33,7 @@ html, body{
     text-decoration: none;
     color: #adadad;
     font-size: 150%;
+    float: left;
 }
 
 .navbar a:hover{
@@ -39,4 +44,21 @@ html, body{
 .navbar a.active{
     background-color:black;
     color: #adadad;
+}
+
+.content{
+    max-width: 400px;
+    margin: auto;
+    background: #c24e4e;
+    padding: 5px;
+}
+
+#websiteName:hover{
+    color: limegreen;
+}
+
+.imageContainer{
+    width: max-content;
+    margin: auto;
+    padding: 50px;
 }
